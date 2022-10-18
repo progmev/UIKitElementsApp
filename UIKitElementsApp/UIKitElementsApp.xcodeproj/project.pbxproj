@@ -13,6 +13,7 @@
 		2D27AF9028FF14F80069069B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D27AF8E28FF14F80069069B /* Main.storyboard */; };
 		2D27AF9228FF14F90069069B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D27AF9128FF14F90069069B /* Assets.xcassets */; };
 		2D27AF9528FF14F90069069B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D27AF9328FF14F90069069B /* LaunchScreen.storyboard */; };
+		2DC9470328FF26CD00887FB1 /* CodeSnippets.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9470228FF26CD00887FB1 /* CodeSnippets.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2D27AF9128FF14F90069069B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D27AF9428FF14F90069069B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D27AF9628FF14F90069069B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DC9470228FF26CD00887FB1 /* CodeSnippets.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = CodeSnippets.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				2D27AF8C28FF14F80069069B /* ViewController.swift */,
 				2D27AF8E28FF14F80069069B /* Main.storyboard */,
 				2D27AF9128FF14F90069069B /* Assets.xcassets */,
+				2DC9470228FF26CD00887FB1 /* CodeSnippets.rtf */,
 				2D27AF9328FF14F90069069B /* LaunchScreen.storyboard */,
 				2D27AF9628FF14F90069069B /* Info.plist */,
 			);
@@ -128,6 +131,7 @@
 				2D27AF9528FF14F90069069B /* LaunchScreen.storyboard in Resources */,
 				2D27AF9228FF14F90069069B /* Assets.xcassets in Resources */,
 				2D27AF9028FF14F80069069B /* Main.storyboard in Resources */,
+				2DC9470328FF26CD00887FB1 /* CodeSnippets.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,248 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;\f2\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red252\green95\blue163;\red31\green31\blue36;\red255\green255\blue255;
+\red93\green216\blue255;\red208\green168\blue255;\red65\green161\blue192;\red161\green103\blue230;\red108\green121\blue134;
+\red103\green183\blue164;\red161\green103\blue230;\red208\green191\blue105;\red252\green106\blue93;\red108\green121\blue134;
+\red208\green168\blue255;\red103\green183\blue164;}
+{\*\expandedcolortbl;;\csgenericrgb\c98839\c37355\c63833;\csgenericrgb\c12054\c12284\c14131;\csgenericrgb\c100000\c100000\c100000\c85000;
+\csgenericrgb\c36295\c84643\c99897;\csgenericrgb\c81569\c65882\c100000;\csgenericrgb\c25490\c63137\c75294;\csgenericrgb\c63137\c40392\c90196;\csgenericrgb\c42394\c47462\c52518;
+\csgenericrgb\c40538\c71705\c64209;\csgenericrgb\c63232\c40219\c90115;\csgenericrgb\c81498\c74939\c41233;\csgenericrgb\c98912\c41558\c36568;\csgenericrgb\c42394\c47462\c52518\c45000;
+\csgenericrgb\c81681\c65692\c99927;\csgenericrgb\c40392\c71765\c64314;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab840
+\pard\tx840\pardeftab840\pardirnatural\partightenfactor0
+
+\f0\b\fs34 \cf2 \cb3 class
+\f1\b0 \cf4  \cf5 ViewController\cf4 : \cf6 UIViewController\cf4  \{\
+    
+\f0\b \cf2 @IBOutlet
+\f1\b0 \cf4  
+\f0\b \cf2 var
+\f1\b0 \cf4  \cf7 segmentetControl\cf4 : \cf6 UISegmentedControl\cf4 !\
+    
+\f0\b \cf2 @IBOutlet
+\f1\b0 \cf4  
+\f0\b \cf2 var
+\f1\b0 \cf4  \cf7 mainLabel\cf4 : \cf6 UILabel\cf4 !\
+    
+\f0\b \cf2 @IBOutlet
+\f1\b0 \cf4  
+\f0\b \cf2 var
+\f1\b0 \cf4  \cf7 slider\cf4 : \cf6 UISlider\cf4 !\
+    
+\f0\b \cf2 @IBOutlet
+\f1\b0 \cf4  
+\f0\b \cf2 var
+\f1\b0 \cf4  \cf7 textField\cf4 : \cf6 UITextField\cf4 !\
+    
+\f0\b \cf2 @IBOutlet
+\f1\b0 \cf4  
+\f0\b \cf2 var
+\f1\b0 \cf4  \cf7 doneButton\cf4 : \cf6 UIButton\cf4 !\
+    
+\f0\b \cf2 @IBOutlet
+\f1\b0 \cf4  
+\f0\b \cf2 var
+\f1\b0 \cf4  \cf7 datePicker\cf4 : \cf6 UIDatePicker\cf4 !\
+    
+\f0\b \cf2 @IBOutlet
+\f1\b0 \cf4  
+\f0\b \cf2 var
+\f1\b0 \cf4  \cf7 hideAllElements\cf4 : \cf6 UISwitch\cf4 !\
+    
+\f0\b \cf2 @IBOutlet
+\f1\b0 \cf4  
+\f0\b \cf2 var
+\f1\b0 \cf4  \cf7 switchLabel\cf4 : \cf6 UILabel\cf4 !\
+\
+    
+\f0\b \cf2 override
+\f1\b0 \cf4  
+\f0\b \cf2 func
+\f1\b0 \cf4  \cf7 viewDidLoad\cf4 () \{\
+        
+\f0\b \cf2 super
+\f1\b0 \cf4 .\cf8 viewDidLoad\cf4 ()\
+        \
+        \cf9 // Setup main label\cf4 \
+        \cf10 mainLabel\cf4 .\cf11 font\cf4  = \cf10 mainLabel\cf4 .\cf11 font\cf4 .\cf8 withSize\cf4 (\cf12 35\cf4 )\
+        \cf10 mainLabel\cf4 .\cf11 textAlignment\cf4  = .\cf11 center\cf4 \
+        \cf10 mainLabel\cf4 .\cf11 numberOfLines\cf4  = \cf12 2\cf4 \
+        \
+        \cf9 // Setup segmented control\cf4 \
+        \cf10 segmentetControl\cf4 .\cf8 insertSegment\cf4 (\cf8 withTitle\cf4 : \cf13 "Fouth"\cf4 , \cf8 at\cf4 : \cf12 3\cf4 , \cf8 animated\cf4 : 
+\f0\b \cf2 false
+\f1\b0 \cf4 )\
+        \cf10 segmentetControl\cf4 .\cf11 selectedSegmentIndex\cf4  = \cf12 0\cf4 \
+        \
+        \cf9 // Setup slider\cf4 \
+        \cf10 slider\cf4 .\cf11 value\cf4  = \cf12 1\cf4 \
+        \cf10 slider\cf4 .\cf11 minimumValue\cf4  = \cf12 0\cf4 \
+        \cf10 slider\cf4 .\cf11 maximumValue\cf4  = \cf12 1\cf4 \
+        \cf10 slider\cf4 .\cf11 minimumTrackTintColor\cf4  = .\cf11 yellow\cf4 \
+        \cf10 slider\cf4 .\cf11 maximumTrackTintColor\cf4  = .\cf11 red\cf4 \
+        \cf10 slider\cf4 .\cf11 thumbTintColor\cf4  = .\cf11 blue\cf4 \
+        \cf14 ///\cf4  
+\f2 \cf9 slider value to mainLabel
+\f1 \cf4 \
+        \cf10 mainLabel\cf4 .\cf11 text\cf4  = \cf15 String\cf4 (\cf10 slider\cf4 .\cf11 value\cf4 )\
+        \
+        \cf9 // Setup Date Picker\cf4 \
+        \cf10 datePicker\cf4 .\cf11 locale\cf4  = \cf15 Locale\cf4 (\cf8 identifier\cf4 : \cf13 "ru_RU"\cf4 )\
+        \
+        \cf9 // \uc0\u1051 \u1086 \u1082 \u1072 \u1083 \u1080 \u1079 \u1072 \u1094 \u1080 \u1103  \u1074  \u1089 \u1086 \u1086 \u1090 \u1074 \u1077 \u1090 \u1089 \u1090 \u1074 \u1080 \u1080  \u1089  \u1090 \u1077 \u1082 \u1091 \u1097 \u1080 \u1084 \u1080  \u1085 \u1072 \u1089 \u1090 \u1088 \u1086 \u1081 \u1082 \u1072 \u1084 \u1080  \u1089 \u1080 \u1089 \u1090 \u1077 \u1084 \u1099 \cf4 \
+\cf9 //        datePicker.locale = Locale.current\cf4 \
+        \
+        \cf10 hideAllElements\cf4 .\cf11 onTintColor\cf4  = .\cf11 red\cf4 \
+        \cf10 switchLabel\cf4 .\cf11 text\cf4  = \cf13 "\uc0\u1057 \u1082 \u1088 \u1099 \u1090 \u1100  \u1074 \u1089 \u1077  \u1101 \u1083 \u1077 \u1084 \u1077 \u1085 \u1090 \u1099 "\cf4 \
+    \}\
+\
+    
+\f0\b \cf2 @IBAction
+\f1\b0 \cf4  
+\f0\b \cf2 func
+\f1\b0 \cf4  \cf7 changeSegment\cf4 () \{\
+        
+\f0\b \cf2 switch
+\f1\b0 \cf4  \cf10 segmentetControl\cf4 .\cf11 selectedSegmentIndex\cf4  \{\
+            
+\f0\b \cf2 case
+\f1\b0 \cf4  \cf12 0\cf4 :\
+                \cf10 mainLabel\cf4 .\cf11 text\cf4  = \cf13 "The first segment is selected"\cf4 \
+                \cf10 mainLabel\cf4 .\cf11 textColor\cf4  = .\cf11 red\cf4 \
+            
+\f0\b \cf2 case
+\f1\b0 \cf4  \cf12 1\cf4 :\
+                \cf10 mainLabel\cf4 .\cf11 text\cf4  = \cf13 "The secod segment is selected"\cf4 \
+                \cf10 mainLabel\cf4 .\cf11 textColor\cf4  = .\cf11 blue\cf4 \
+            
+\f0\b \cf2 case
+\f1\b0 \cf4  \cf12 2\cf4 :\
+                \cf10 mainLabel\cf4 .\cf11 text\cf4  = \cf13 "The third segment is selected"\cf4 \
+                \cf10 mainLabel\cf4 .\cf11 textColor\cf4  = .\cf11 yellow\cf4 \
+            
+\f0\b \cf2 case
+\f1\b0 \cf4  \cf12 3\cf4 :\
+                \cf10 mainLabel\cf4 .\cf11 text\cf4  = \cf13 "The fouth segment is selected"\cf4 \
+                \cf10 mainLabel\cf4 .\cf11 textColor\cf4  = .\cf11 blue\cf4 \
+            
+\f0\b \cf2 default
+\f1\b0 \cf4 : 
+\f0\b \cf2 break
+\f1\b0 \cf4 \
+        \}\
+    \}\
+    \
+    
+\f0\b \cf2 @IBAction
+\f1\b0 \cf4  
+\f0\b \cf2 func
+\f1\b0 \cf4  \cf7 sliderAction\cf4 () \{\
+        
+\f0\b \cf2 let
+\f1\b0 \cf4  backgroundColor = \cf11 view\cf4 .\cf11 backgroundColor\cf4 \
+        \cf11 view\cf4 .\cf11 backgroundColor\cf4  = backgroundColor?.\cf8 withAlphaComponent\cf4 (\cf15 CGFloat\cf4 (\cf10 slider\cf4 .\cf11 value\cf4 ))\
+        \cf10 mainLabel\cf4 .\cf11 text\cf4  = \cf15 String\cf4 (\cf10 slider\cf4 .\cf11 value\cf4 )\
+    \}\
+    \
+    
+\f0\b \cf2 @IBAction
+\f1\b0 \cf4  
+\f0\b \cf2 func
+\f1\b0 \cf4  \cf7 doneButtonPressed\cf4 () \{\
+        
+\f0\b \cf2 guard
+\f1\b0 \cf4  
+\f0\b \cf2 let
+\f1\b0 \cf4  inputText = \cf10 textField\cf4 .\cf11 text\cf4 , !inputText.\cf11 isEmpty\cf4  
+\f0\b \cf2 else
+\f1\b0 \cf4  \{\
+            
+\f0\b \cf2 return
+\f1\b0 \cf4 \
+        \}\
+        \
+        
+\f0\b \cf2 if
+\f1\b0 \cf4  
+\f0\b \cf2 let
+\f1\b0 \cf4  _ = \cf15 Double\cf4 (inputText) \{\
+            \cf16 showAlert\cf4 (\cf16 title\cf4 : \cf13 "Wrong format!"\cf4 , \cf16 message\cf4 : \cf13 "Please enter your name"\cf4 )\
+            \cf8 print\cf4 (\cf13 "Wrong formar"\cf4 )\
+        \} 
+\f0\b \cf2 else
+\f1\b0 \cf4  \{\
+            \cf10 mainLabel\cf4 .\cf11 text\cf4  = inputText\
+            \cf10 textField\cf4 .\cf11 text\cf4  = 
+\f0\b \cf2 nil
+\f1\b0 \cf4 \
+        \}\
+    \}\
+    \
+    
+\f0\b \cf2 @IBAction
+\f1\b0 \cf4  
+\f0\b \cf2 func
+\f1\b0 \cf4  \cf7 changeDate\cf4 () \{\
+        
+\f0\b \cf2 let
+\f1\b0 \cf4  dateFornatter = \cf6 DateFormatter\cf4 ()\
+        dateFornatter.\cf11 dateStyle\cf4  = .\cf11 long\cf4 \
+        dateFornatter.\cf11 locale\cf4  = \cf15 Locale\cf4 (\cf8 identifier\cf4 : \cf13 "ru_RU"\cf4 )\
+\
+        
+\f0\b \cf2 let
+\f1\b0 \cf4  dateValue = dateFornatter.\cf8 string\cf4 (\cf8 from\cf4 : \cf10 datePicker\cf4 .\cf11 date\cf4 )\
+        \cf10 mainLabel\cf4 .\cf11 text\cf4  = dateValue\
+    \}\
+    \
+    
+\f0\b \cf2 @IBAction
+\f1\b0 \cf4  
+\f0\b \cf2 func
+\f1\b0 \cf4  \cf7 swicthAction\cf4 () \{\
+        \cf10 segmentetControl\cf4 .\cf11 isHidden\cf4 .\cf8 toggle\cf4 ()\
+        \cf10 mainLabel\cf4 .\cf11 isHidden\cf4 .\cf8 toggle\cf4 ()\
+        \cf10 slider\cf4 .\cf11 isHidden\cf4 .\cf8 toggle\cf4 ()\
+        \cf10 textField\cf4 .\cf11 isHidden\cf4 .\cf8 toggle\cf4 ()\
+        \cf10 doneButton\cf4 .\cf11 isHidden\cf4 .\cf8 toggle\cf4 ()\
+        \cf10 datePicker\cf4 .\cf11 isHidden\cf4 .\cf8 toggle\cf4 ()\
+        \
+        \cf10 switchLabel\cf4 .\cf11 text\cf4  = \cf10 hideAllElements\cf4 .\cf11 isOn\cf4  ? \cf13 "\uc0\u1057 \u1082 \u1088 \u1099 \u1090 \u1100  \u1074 \u1089 \u1077  \u1101 \u1083 \u1077 \u1084 \u1077 \u1085 \u1090 \u1099 "\cf4  : \cf13 "\uc0\u1054 \u1090 \u1086 \u1073 \u1088 \u1072 \u1079 \u1080 \u1090 \u1100  \u1074 \u1089 \u1077  \u1101 \u1083 \u1077 \u1084 \u1077 \u1085 \u1090 \u1099 "\cf4 \
+    \}\
+\}\
+\
+
+\f0\b \cf2 extension
+\f1\b0 \cf4  \cf5 ViewController\cf4  \{\
+    
+\f0\b \cf2 private
+\f1\b0 \cf4  
+\f0\b \cf2 func
+\f1\b0 \cf4  \cf7 showAlert\cf4 (\cf7 title\cf4 : \cf15 String\cf4 , \cf7 message\cf4 : \cf15 String\cf4 ) \{\
+        \
+        
+\f0\b \cf2 let
+\f1\b0 \cf4  alert = \cf6 UIAlertController\cf4 (\
+            \cf8 title\cf4 : title,\
+            \cf8 message\cf4 : message,\
+            \cf8 preferredStyle\cf4 : .\cf11 actionSheet\cf4 \
+        )\
+        \
+        
+\f0\b \cf2 let
+\f1\b0 \cf4  okAction = \cf6 UIAlertAction\cf4 (\cf8 title\cf4 : \cf13 "OK"\cf4 , \cf8 style\cf4 : .\cf11 default\cf4 ) \{ _ 
+\f0\b \cf2 in
+\f1\b0 \cf4 \
+            
+\f0\b \cf2 self
+\f1\b0 \cf4 .\cf10 textField\cf4 .\cf11 text\cf4  = \cf13 ""\cf4 \
+        \}\
+        \
+        alert.\cf8 addAction\cf4 (okAction)\
+        \cf8 present\cf4 (alert, \cf8 animated\cf4 : 
+\f0\b \cf2 true
+\f1\b0 \cf4 )\
+    \}\
+\}}
